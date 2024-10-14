@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App</title>
+</head>
+<body>
+    <script>
+        function MyReverse(ar) {
+            let newAr = [];
+            for (let i=ar.length-1; i>=0; i--) {
+                newAr[newAr.length] = ar[i];
+            }
+            return newAr;
+        }
+        let ar = [-3,5,1,19,3,2,10,-8];
+        let newAr = MyReverse(ar);
+        let s = "";
+        for (let i =0; i<newAr.length; i++) {
+            s += `${newAr[i]} `;
+        }
+        document.write(s);
+    </script>
+</body>
+</html>
